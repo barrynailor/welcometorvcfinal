@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Paytone+One|Source+Serif+Pro|Spectral+SC');
+
+body { margin: 0; text-align: center; background-color: #d1dbbd; font-family: 'Source Serif Pro', serif; }
+
+
+nav h1 {  color: white; margin: 0 0.5em;  
+
+        font-size: 1.8em; float: right; background-color: transparent; box-shadow: none; text-shadow: none; font-family: 'Spectral SC', serif; }
+
+nav { background-color: #193441; height: 3.3em; position: fixed; width: 100%; 
+
+        }
+
+h1 { font-size: 3.5em; margin-bottom: 0;
+
+        letter-spacing: 6px; background-color: #3e606f; color: #FCFFF5; 
+
+        box-shadow: 0px 5px 5px black; text-shadow: 2px 2px 2px black; 
+
+        font-family: 'Paytone One', sans-serif; }
+
+nav a { display: inline-block; 
+
+        padding: 1em 1vw .7em 1vw; font-size: 1em; margin: 0;
+
+        text-decoration: none; 
+
+        color: white; 
+
+        border: 1px solid grey; float: left;  
+
+/*        font-weight: lighter; */
+
+        font-family: 'Spectral SC', serif; letter-spacing: 1px;}
+
+nav a:hover { background-color: #fcfff5; color: black; }
+
+
+
+
+#homeimg { margin-left: auto; margin-right: auto; margin-top: 1em;  }
+
+#homeimg img { width: 50vw; border: 2px solid #193441; }
+
+#top { margin-top: 1em; }
+
+#studentexp { width: 50vw; text-align: left; display: inline-block; 
+
+        margin-top: 2em; padding-left: .5em; background-color: #91aa9d; border: 2px solid #193441;}
+
+#studentexp img { float: right; margin: 2em 0 1em 1em; width: 40%; 
+
+        border: 2px solid #193441; }
+
+#studentexp h2 { text-align: center; font-family: 'Spectral SC', serif; }
+
+#wrapper { clear: both; width: 70vw; margin-left: auto; margin-right: auto;
+
+            background-color: #fcfff5; overflow: auto; }
+
+/*
+figure { position: absolute;
+        
+        text-align: center; opacity: .25; margin: 6em 0 0 0; }
+
+figure img {width: 70vw; }
+*/
+        
+
+#gallery ul {  list-style-type: none; }
+        
+#gallery li { display: inline; float: left; padding: 10px; }
+        
+#gallery img { border: none; }
+        
+#gallery a { text-decoration: none; color: #eaeaea; font-style: italic; }
+        
+#gallery span { opacity: 0;  position: absolute; display: none; 
+        
+                 }
+
+#gallery span img { width: 70vw; margin-top: .5em; padding: 0; }
+        
+#gallery a:hover span { left: 14.5vw;
+        
+                text-align: center; opacity: 1; display: block; }
+
+.thumbnailwidth { width: 5vw }
+
+
+.fullimg { display: block; margin-top: 1em; }
+
+.fullimg img { width: 70vw; }
+
+.leftcont { display: inline-block; width: 45%; float: left; margin-left: 1em; }
+
+.rightcont { display: inline-block; width: 45%; float: right; margin-right: 1em;}
+
+details { text-align: left;  border: 1px solid black; }
+
+details summary { font-weight: bold; background-color: #91aa9d; padding: 1em;
+
+        }
+
+details summary:hover { background-color: #3e606f; color: #fcfff5;}
+
+summary:before { content: "+ "; letter-spacing: 5px; font-size: 1.2em; }
+
+details[open] summary { background-color: #3e606f; color: #fcfff5; }
+
+details[open] summary:before { content: "- "; }
+
+details[open] p { margin: .5em; }
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+
+/*#certs { clear: both; margin-top: 15em; }*/
+
+.spacer { height: 2em; visibility: hidden; }
+
+.spacer2 { height: 2em; margin-top: 100vh; visibility: hidden; }
+
+.spacer3 { height: 2em; margin-top: 70vh; visibility: hidden; }
+
+.spacer4 { height: 2em; margin-top: 100vh; visibility: hidden; }
+
+footer { clear: both; padding-top: 4em; font-style: italic; font-size: small; 
+
+        padding-bottom: 3em;}
+
+#tabletgallery { display: none; margin-top: 2em; }
+
+#tabletgallery img { width: 40vw; }
+
+@media only screen and (max-width: 64em) {
+    
+    #wrapper { width: 85vw; }
+    
+    nav h1 { display: none; }
+    
+    nav a { padding-left: 2.5vw; padding-right: 2.5vw; }
+    
+    #homeimg img { width: 84.5vw; } 
+    
+    #studentexp { width: 83.5vw; }
+    
+    #gallery ul { display: none; }
+    
+    #tabletgallery { display: inline-block; }
+    
+    .spacer2 { margin-top: 2em;}
+    
+    .fullimg img { width: 85vw; }
+    
+}
+
+@media only screen and (max-width: 37.5em) {
+    
+    #wrapper { width: 100vw; }
+    
+    
+    
+}
